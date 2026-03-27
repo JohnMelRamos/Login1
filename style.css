@@ -1,0 +1,114 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+h1{
+    font-size: 50px;
+    position: relative;
+    width: max-content;
+    color: white;
+
+}
+body{
+    background-color: black;
+}
+
+section{
+    background:url("bg.gif");
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+
+
+
+    
+}
+
+.container{
+    
+    border: 1px solid white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    background:transparent;
+    backdrop-filter: blur(15px);
+    width: 550px;
+
+
+}
+.inbox{
+    position: relative;
+    width: 310px;
+    margin: 30px 0;
+    border-bottom: 2px solid white;
+
+ 
+
+}
+.inbox label{
+    position: absolute;
+    font-size: 1em;
+    color: white;
+    pointer-events: none;
+    top:16px;
+    left:5px;
+    transition: 1s;
+    
+    
+}
+.inbox input:focus~label,
+.inbox input:valid~label{
+    top:-10px;
+}
+.inbox input{
+    background: transparent;
+    width: 100%;
+    height: 50px;
+    border: none;
+    font-size:20px;
+    border: none;
+    outline: none;
+        color: white;
+    
+
+}
+.inbox img{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top:16px;
+    right:5px;
+}
+
+
+
+button{
+    font-size: 40px;
+    text-decoration: none;
+    border: 1px solid white;
+    color:white;
+    padding: 10px;
+    background-color: transparent;
+    position: relative;
+    width: 400px;
+    border-radius:10px ;
+    transition: color 1s ease 0s, background-color 2s ease 0s, transform 3s ease 0s;
+
+
+}
+
+button:hover{
+    color: black;
+    background-color: white;
+	transform: translateY(-10px);
+}
+
