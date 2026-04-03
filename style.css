@@ -12,9 +12,11 @@ h1{
 body{
     background-color: black;
 }
-
+body{
+     background:url("bg.gif");
+}
 section{
-    background:url("bg.gif");
+
     background-repeat: no-repeat;
     background-size:cover;
     width: 100%;
@@ -64,6 +66,7 @@ section{
 .inbox input:focus~label,
 .inbox input:valid~label{
     top:-10px;
+
 }
 .inbox input{
     background: transparent;
